@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lamar's Kebab</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: white;
+      animation: fadeIn 1.5s ease-in-out; 
+    }
+
+    header, footer {
+      background-color: #FFD700;
+      color: #333;
+      text-align: center;
+      padding: 20px;
+      animation: slideDown 1.2s ease-out; 
+    }
+
+    .hero {
+      text-align: center;
+      padding: 40px 20px;
+      animation: fadeUp 1.5s ease-in-out;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      animation: textGlow 2s ease-in-out infinite alternate;
+    }
+
+    .menu {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+      animation: fadeUp 2s ease-in-out;
+    }
+
+    .menu h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      animation: bounceIn 1.5s ease-in-out;
+    }
+
+    .items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .item {
+      border: 1px solid #ccc;
+      padding: 15px;
+      width: 200px;
+      text-align: center;
+      border-radius: 8px;
+      transform: scale(0.9);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeUp 2s ease-in-out;
+    }
+
+    .item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .limited-edition {
+      background-color: #fff8dc;
+      padding: 40px 20px;
+      border-top: 2px solid #FFD700;
+      border-bottom: 2px solid #FFD700;
+      text-align: center;
+      animation: fadeUp 2s ease-in-out;
+    }
+
+    .limited-edition img {
+      max-width: 300px;
+      border-radius: 10px;
+      animation: pulse 2s infinite;
+    }
+
+    .limited-edition p {
+      max-width: 600px;
+      margin: 20px auto;
+      font-size: 1.1em;
+      animation: fadeUp 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-100%); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeUp {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes bounceIn {
+      0% { transform: scale(0.5); opacity: 0; }
+      60% { transform: scale(1.2); opacity: 1; }
+      100% { transform: scale(1); }
+    }
+
+    @keyframes textGlow {
+      from { color: #333; text-shadow: none; }
+      to { color: #000; text-shadow: 0 0 10px #FFD700; }
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    @media (max-width: 600px) {
+      .items {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Lamar's Kebab stand</h1>
+    <p>Fresh, Fast, Flavorful</p>
+  </header>
+
+  <div class="hero">
+    <p>Welcome to Lamar’s Kebab stand! your go to spot for delicious, sizzling kebabs and mouthwatering sauces.</p>
+  </div>
+
+<section class="menu">
+  <h2>Our Menu</h2>
+  <div class="items">
+    <div class="item">
+      <h3>Döner Kebab</h3>
+      <img src="Skjermbilde 2025-11-12 133004.png" alt="Döner Kebab" width="200">
+      <p>Juicy meat from Döner!</p>
+    </div>
+    <div class="item">
+      <h3>Shish Kebab</h3>
+      <img src="Skjermbilde 2025-11-12 133130.png" alt="Shish Kebab" width="200">
+      <p>Grilled marinated meat overnight!</p>
+    </div>
+    <div class="item">
+      <h3>Lamar's secret sauce</h3>
+      <img src="Skjermbilde 2025-11-12 133658.png" alt="Lamar's secret sauce" width="100">
+      <p>Secret sauce = secret ingredients..</p>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
